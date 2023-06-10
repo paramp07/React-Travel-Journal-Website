@@ -1,4 +1,6 @@
-# React Business Card from scrimba
+Here is the link to the site: https://capable-kitsune-067060.netlify.app
+
+React Business Card from scrimba
 Started learning react a few days ago and created this *masterpiece* by myself with vite and react and allat.
 On the scrimba site, they were asking that I sign up for the pro thing but I didn't want to pay money for something I might not even use so I just looked this challenge up and found the requirements.
 
