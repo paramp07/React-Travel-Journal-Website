@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(19, 19, 20);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.ImageContainer {
+  height: 400px;
+  background-image: url('https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center center;
+  border-radius: 15px 15px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 45%;
+  border-radius: 15px;
+  background-color: rgb(6, 5, 5);
+  margin: 4rem auto;
+  min-width: 400px;
+  max-width: 700px;
+  /* min-height: 1400px; */
+}
+
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+.info {
+  text-align: center;
+}
+
+.info > h1 {
+  color: white;
+  margin: 1rem 0 0 0;
+  font-size: 2.5em;
+}
+
+.info > h3 {
+  color: rgb(65, 192, 128);
+  font-weight: 600;
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+
+.info > p {
+  color: white;
+  font-size: .8rem;
+  margin: 0;
+}
+
+.main--contact {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  background-color: white;;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: all .2s ease-out;
+}
+
+
+.contact-btn:hover {
+  cursor:pointer;
+  color: white;
+  background-color: rgb(12, 12, 12);
+}
+
+.contact-btn a {
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+.linkedin {
+  letter-spacing: .5px;
+  color: white;
+  background-color: rgb(90, 175, 255);
+}
+
+.linkedin  a {
+  color: white;
+}
+
+.contact-btn i {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+
+.text { 
+  margin: 2.5rem 0 0 0;
+  color: rgb(212, 223, 242);
+}
+
+.text > p, .text > h2 {
+  margin: 10px 0;
+}
+
+
+
+.footer-contact {
+  color: rgb(161, 156, 156);
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 2rem 2rem 2rem;
+}
+
