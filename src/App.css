@@ -1,136 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(34, 34, 35);
+  background-color: rgb(255, 244, 237);
+}
+
+.nav {
   display: flex;
   justify-content: center;
-}
-
-
-
-
-.ImageContainer {
-  height: 400px;
-  background-image: url('https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-position: center center;
-  border-radius: 15px 15px 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  border-radius: 15px;
-  background-color: rgb(12, 11, 11);
-  margin: 4rem auto;
-  min-width: 400px;
-  max-width: 700px;
-  /* min-height: 1400px; */
-  box-shadow: 0px 1px 10px rgb(13, 13, 13);
-}
-
-.main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-
-
-.info {
-  text-align: center;
-}
-
-.info > h1 {
-  color: white;
-  margin: 1rem 0 0 0;
-  font-size: 2.5em;
-}
-
-.info > h3 {
-  color: rgb(65, 192, 128);
-  font-weight: 600;
-  margin-top: 2px;
-  margin-bottom: 7px;
-}
-
-.info > p {
-  color: white;
-  font-size: .8rem;
-  margin: 0;
-}
-
-.main--contact {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.contact-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  background-color: rgb(28, 220, 153);
   align-items: center;
-  background-color: white;;
-  padding: 8px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  transition: all .2s ease-out;
-}
-
-
-.contact-btn:hover {
-  cursor:pointer;
+  gap: 10px;
   color: white;
-  background-color: rgb(12, 12, 12);
+  box-shadow: 0px 2px 20px rgb(0, 0, 0,.2);
+  margin-bottom: 19px;
 }
 
-.contact-btn a {
+
+
+.nav h1 {
+  font-size: 28px;
+}
+
+.nav img {
+  width: 26px;
+  height: 26px;
+}
+
+
+
+/* MAIN CONTENT AHEAD I REPEAT MAIN CONTENT AHEAD */
+
+
+.travel-list {
+  margin: 4rem 2rem;
+  transition: all 0.3s ease;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333;  /* old IE */
+  background-color: #269c57;  /* Modern Browsers */
+  max-width: 876px;
+}
+
+
+.component {
+  display: flex;
+  align-items: center;
+  max-width: 876px;
+  margin: 3rem auto;
+  transition: all 0.3s ease;
+}
+
+.component img {
+  border-radius: 5px;
+  width: 320px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.country {
+  margin: 0 16px 0 3px;
   font-weight: bold;
+  letter-spacing: 2px;
+  font-size: .8rem;
+}
+
+.location i {
+  color: rgb(28, 220, 153);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.location > a {
+  font-size: .8rem;
+  color: rgb(144, 151, 148);
+}
+
+.name {
+  margin: 2px 0;
+  font-size: 2.6vw;
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 
+  4px 4px 0px rgb(255, 244, 237), 
+  5px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.main-info {
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.date span, .date p {
+  font-weight: bold;
+}
+
+.date > p {
   margin: 0;
 }
 
-
-
-.linkedin {
-  letter-spacing: .5px;
-  color: white;
-  background-color: rgb(90, 175, 255);
-}
-
-.linkedin  a {
-  color: white;
-}
-
-.contact-btn i {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-}
-
-
-.text { 
-  margin: 2.5rem 0 0 0;
-  color: rgb(212, 223, 242);
-}
-
-.text > p, .text > h2 {
-  margin: 10px 0;
+.description {
+  font-size: .8rem;
 }
 
 
 
-.footer-contact {
-  color: rgb(161, 156, 156);
-  display: flex;
-  justify-content: space-around;
-  margin: 4rem 2rem 2rem 2rem;
+
+/* mobile design */
+
+@media (max-width: 1366px) {
+  .name {
+    font-size: 2.2rem;
+  }
 }
 
+
+@media (max-width: 966px) {
+  .component img {
+    aspect-ratio: 16 / 11;
+  }
+  .component {
+    margin: 3.2rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .component  {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .component img {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+
+  .travel-list {
+    margin: 4rem 4rem;
+  }
+
+  .main-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
